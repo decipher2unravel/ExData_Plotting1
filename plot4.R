@@ -30,7 +30,7 @@ hpc_plot4 <- function(fromdate='2007-2-01', todate='2007-2-02'){
  plot(New, Sub_metering_1, pch=".", type="l", col="black",xlab= ' ', ylab = 'Energy sub metering')
  lines(New, Sub_metering_2, col="red")
  lines(New, Sub_metering_3, col="blue")
- legend("topright", pch = '___', col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+ legend("topright", pch = '___', col = c("black", "red", "blue"), bty='n',legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
  plot(New, Global_reactive_power, pch=".", type="l", col="black", xlab = 'datetime')
  mtext ("Plot4", outer = TRUE)
 })
